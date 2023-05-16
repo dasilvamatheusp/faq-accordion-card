@@ -16,13 +16,13 @@ body {
   width: 100vw;
   background-image: linear-gradient(180deg, #B068E9, #6463E7);
   font-family: 'Kumbh Sans', sans-serif;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .container {
   display: flex;
   background-color: white;
-  height: 509px;
+  min-height: 509px;
   width: 920px;
   border-radius: 23px;
 }
