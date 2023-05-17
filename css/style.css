@@ -27,6 +27,19 @@ body {
   border-radius: 23px;
 }
 
+.background-image {
+  position: relative;
+}
+
+.background-image > img{
+  position: absolute;
+  height: 568px;
+  width: 964px;
+  left: -332px;
+  top: 23px;
+  opacity: 0.3;
+}
+
 .front-image {
   position: relative;
 }
@@ -117,7 +130,13 @@ body {
   display: none;
 }
 .rotate {
+  transition: all ease .2s;
   transform: rotate(180deg);
+  margin-bottom: 11px;
+}
+.icon > img {
+  height: 8px;
+  width: 10px;
 }
 
 
