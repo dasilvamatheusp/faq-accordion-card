@@ -27,7 +27,7 @@ body {
   border-radius: 23px;
 }
 
-.background-image {
+/* .background-image {
   position: relative;
 }
 
@@ -38,7 +38,8 @@ body {
   left: -332px;
   top: 23px;
   opacity: 0.3;
-}
+  
+} */
 
 .front-image {
   position: relative;
