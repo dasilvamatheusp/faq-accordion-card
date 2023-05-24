@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-body {
+body, html {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,19 +27,16 @@ body {
   border-radius: 23px;
 }
 
-/* .background-image {
+.background-image {
   position: relative;
 }
 
 .background-image > img{
-  position: absolute;
-  height: 568px;
-  width: 964px;
-  left: -332px;
-  top: 23px;
-  opacity: 0.3;
-  
-} */
+  position: absolute; 
+  left: -18px;
+  top: 63px;
+  opacity: 0.5;
+}
 
 .front-image {
   position: relative;
@@ -87,7 +84,7 @@ body {
   flex-direction: column;
   min-height: 50px;
   width: 350px;
-  border-bottom: 2px solid #E8E8EA;
+  border-bottom: 1px solid #E8E8EA;
 }
 
 .questions {
@@ -138,6 +135,88 @@ body {
 .icon > img {
   height: 8px;
   width: 10px;
+}
+.mobile-background-image {
+  display: none;
+}
+
+
+@media screen and (max-width: 1050px) {
+
+  body {
+    background-color: #1E1F36;
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    overflow-y: auto;
+    
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: calc(80vh - 500px);
+    position: relative;
+    min-height: 535px;
+    width: 327px;
+    border-radius: 23px;
+    margin-bottom: 85px;
+    
+  }
+
+  .mobile-background-image {
+    display: block;
+  }
+  .mobile-background-image > img {
+    opacity: 0.5;
+  }
+  .mobile-img-section > img {
+    
+    position: absolute;
+    
+    width: 237px;
+    height: 180px;
+    left: 43px;
+    top: -107px;
+  }
+  .info-section {
+    min-height: 355px;
+    width: 279px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 24px 48px 24px;
+  }
+  .info-section > .title > h1 {
+    margin: 20px auto 40px auto;
+    font-size: 32px;
+    
+    
+  }
+  .list { 
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .list > .accordion-item {
+    
+    min-height: 35px;
+    width: 279px;
+  }
+  .questions {
+    font-size: 13px;
+  }
+  .response {
+    font-size: 12px;
+  }
+  .img-section {
+    display: none;
+  }
+  .background-image {
+    display: none;
+  }
+  .front-image {
+    display: none;
+  }
 }
 
 
